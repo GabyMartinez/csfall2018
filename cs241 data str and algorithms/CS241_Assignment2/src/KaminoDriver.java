@@ -9,7 +9,9 @@ public class KaminoDriver {
 
 		JangoFett[] fettArray1 = {copy1, copy2, copy3};
 		
-		JangoFett[] fettArray2= new JangoFett[fettArray1.length];	
+		JangoFett[] fettArray2= new JangoFett[fettArray1.length];
+		
+		JangoFett[] fettArray3 = fettArray1; //addition shallow copy
 		
 		for(int i=0; i<fettArray1.length; i++)
 		{
@@ -23,12 +25,19 @@ public class KaminoDriver {
 		
 		System.out.println("fettArray1[] = " + Arrays.toString(fettArray1));
 		System.out.println("fettArray2[] = " + Arrays.toString(fettArray2));
+		System.out.println("fettArray3[] = " + Arrays.toString(fettArray3)); //addition shallow copy
 		
 		obj1.zeroFett(copy1);
 		
 		System.out.println();
 		System.out.println("fettArray1[] = " + Arrays.toString(fettArray1));
-		System.out.println("fettArray2[] = " + Arrays.toString(fettArray2));
+		System.out.println("fettArray2[] = " + Arrays.toString(fettArray2)); //deep copy: doesnt change when og changes
+		System.out.println("fettArray3[] = " + Arrays.toString(fettArray3)); //shallow copy: changes when og changes
+		
+		//shallow copy makes an array that points to the first array (alias)
+		//deep copy creates a new array with a different reference in memory with the same numbers as the original array
+		
+		
 		
 	}
 }
