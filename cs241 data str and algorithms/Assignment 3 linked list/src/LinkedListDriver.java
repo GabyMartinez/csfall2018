@@ -14,7 +14,6 @@ public class LinkedListDriver
       
       System.out.println(test); 
       
- //     test.insert("House and Garden", 2);
       System.out.println(test.sizeOf());
       System.out.println("Is the list empty? "+test.isEmpty() + "\n");
       

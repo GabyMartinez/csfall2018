@@ -36,48 +36,6 @@ public class LinkedList {
 		   }
 	   }
 	   
-	/*   public void remove(String val) {
-		   Node prev = list;
-		   Node current = list;
-		   Node next = current.next;
-		   
-		   if(list.next == null && val.equalsIgnoreCase(current.value)) {
-			   list = null;
-		   }
-		   
-		   while(current.next != null) {
-			   if(val.equalsIgnoreCase(current.value))
-				   prev.next = next;
-			   	prev = current;
-				current = current.next;
-		   }
-		   
-		   if(current.next==null && val.equalsIgnoreCase(current.value)) {
-			   prev.next=null;
-		   }
-		   
-	   }
-	  
-	   public void insert(String val, int index) {
-		   Node insert = new Node(val);
-		   Node current = list;
-		   Node temp = list;
-		   int count = 0;
-		   if (index==1) {
-			   insert.next = list;
-		   }
-		   else {
-			   while(current.next != null && count != index) {
-				   count++;
-				   current = current.next;
-			   }
-			   temp = current;
-			   current.next = insert;
-			   insert.next = temp.next;
-		   }
-		   
-	   }
-	  */ 
 	   public int sizeOf() {
 		   Node current = list;
 		   int count = 0;
