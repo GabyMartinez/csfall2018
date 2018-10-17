@@ -13,8 +13,9 @@ public class LinkedListDriver
       test.add("GQ");
       
       System.out.println(test); 
-      
+      //testing sizeOf() method
       System.out.println(test.sizeOf());
+      //testing isEmpty() method
       System.out.println("Is the list empty? "+test.isEmpty() + "\n");
       
       System.out.println(test);

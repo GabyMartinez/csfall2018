@@ -14,13 +14,15 @@ public class LinkedList {
 		   if(list==null) {
 			   current.next = x;
 		   }
-		   
-		   while(current.next != null) {
-			   current = current.next;
+		   else {
+			   while(current.next != null) {
+				   current = current.next;
+			   }
+			   current.next=x;
 		   }
-		   current.next=x;
 	   }
 	   
+	   //adds a new node taking a string
 	   public void add(String val) {
 		   Node x = new Node(val);
 		   Node current = list;
@@ -36,6 +38,7 @@ public class LinkedList {
 		   }
 	   }
 	   
+	   //length of list
 	   public int sizeOf() {
 		   Node current = list;
 		   int count = 0;
@@ -50,6 +53,7 @@ public class LinkedList {
 		   return count;
 	   }
 	   
+	   //tells you if the list is empty
 	   public boolean isEmpty() {
 		   boolean empty = false;
 		   if(list==null)
