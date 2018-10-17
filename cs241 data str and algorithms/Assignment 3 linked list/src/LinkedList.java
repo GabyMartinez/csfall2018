@@ -36,7 +36,7 @@ public class LinkedList {
 		   }
 	   }
 	   
-	   public void remove(String val) {
+	/*   public void remove(String val) {
 		   Node prev = list;
 		   Node current = list;
 		   Node next = current.next;
@@ -57,19 +57,46 @@ public class LinkedList {
 		   }
 		   
 	   }
-	   
+	  
+	   public void insert(String val, int index) {
+		   Node insert = new Node(val);
+		   Node current = list;
+		   Node temp = list;
+		   int count = 0;
+		   if (index==1) {
+			   insert.next = list;
+		   }
+		   else {
+			   while(current.next != null && count != index) {
+				   count++;
+				   current = current.next;
+			   }
+			   temp = current;
+			   current.next = insert;
+			   insert.next = temp.next;
+		   }
+		   
+	   }
+	  */ 
 	   public int sizeOf() {
 		   Node current = list;
 		   int count = 0;
 		   if(list==null)
 			   count = 0;
 		   else {
-			   while(current.next != null) {
+			   while(current != null) {
 				   count++;
 				   current = current.next;
 			   }
 		   }
 		   return count;
+	   }
+	   
+	   public boolean isEmpty() {
+		   boolean empty = false;
+		   if(list==null)
+			   empty=true;
+		   return empty;
 	   }
 	   
 	   public String toString() {
