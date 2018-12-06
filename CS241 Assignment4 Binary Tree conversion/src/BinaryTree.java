@@ -5,7 +5,7 @@ public class BinaryTree {
 	public BinaryTree() {
 		this.root=null;
 	}
-	
+	/*
 	public void insert(String s) {
 		Node newnode = new Node(s);
 		if(root==null)  //add node to front
@@ -18,38 +18,51 @@ public class BinaryTree {
 		{
 			Node tempL = root;
 			Node tempR = root;
-			//int cL=0,cR=0;
 			
-			//Your code here: make temp point to last thing in list
+			//Your code here: make temp point to last thing in list		
+			//Your code here: now it is time to link the new node into list
 			
-			while (tempL.left!= null) {
-				tempL = tempL.left; //last left node
-			//	cL++;
-			}
-				
-			while (tempR.right!= null) {
-				tempR = tempR.right; //last right node
-			//	cR++;
-			}
-				
-			/*/Your code here: now it is time to link the new node into list
-			if(cL<cR)
-				tempL.left=newnode;
-			else
-				tempR.right=newnode;
-			*/
 		}
+	}
+	*/
+
+	public void insert(String s) {
+		root = insert_at_sub(s, root);
+	}
+	private Node insert_at_sub(String s, Node p) {
+		 if (p == null) {
+		        return new Node(s);
+		    } 
+		 else if (s.compareTo(p.val)<0) {
+		        p.left = insert_at_sub(s,p.left);
+		    } 
+		 else if (s.compareTo(p.val)>0) {
+		        p.right = insert_at_sub(s, p.right);
+		    }
+		return p;
+	}
+	
+	public void print() {
+		print_sub(root);
+	}
+	private void print_sub(Node p){
+		 if (p!=null) {
+			 print_sub(p.left);
+		     System.out.println(p.val);
+		     print_sub(p.right);
+		 }
 	}
 	
 	private class Node{
 		String val;
 		Node left,right;
+		
 		public Node() {
 			val = "";
 			left=null;
 			right=null;
 		}
-		public Node(String val) {
+		public Node(String val) { //<- this constructor most used
 			this.val = val;
 			left =null;
 			right=null;
