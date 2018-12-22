@@ -1,0 +1,3 @@
+echo enter folder name
+read name
+mkdir $name

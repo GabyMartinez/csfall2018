@@ -1,0 +1,17 @@
+echo "Enter the first three letters of the a month in lower case letters"
+read a
+
+case $a in
+	feb) b=28;;
+	aug) b=29;;
+	apr|may|jun|sep|nov) b=30;;
+	jan|mar|jul|oct|dec) b=31;;
+	*) echo "please enter the first three letters of a month in lower case"
+	   b=0;;
+esac
+
+if [[ $b -gt 0 ]]
+# -gt greater than
+then
+	echo "This month has $b days"
+fi

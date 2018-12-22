@@ -1,0 +1,16 @@
+echo enter a number
+read a
+echo enter another number
+read b
+echo "$a divided by $b is $((a/b))"
+ 
+#boolean expressions
+a=5
+b=7
+readonly c=$((a + b))
+#things can be reassigned readonly = constant
+echo "$a + $b evaluates to $c"
+ 
+echo $((4 - 3))
+ 
+#echo [[ "$a" > "$b" ]]

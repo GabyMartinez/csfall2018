@@ -1,0 +1,13 @@
+sum=0
+echo "Enter a number or 0 to stop"
+read x
+i=0
+while ((x != 0))
+do
+	sum=$((sum + x))
+	echo "Enter a number or 0 to stop"
+	read x
+	i=$((i + 1))
+done
+average=$((sum/i))
+echo "The average of the numbers entered is: $average"

@@ -1,0 +1,29 @@
+#write a script to convert grade num to grade letter
+
+echo "Enter a grade number (between 0 and 100)"
+read x
+
+#below 60 = F
+#60 to 69 = D
+#70 to 79 = C
+#80 to 89 = B
+#90 to 100 = A
+
+if((x<60))
+then
+	echo F
+elif((60<=x && x<=69))
+then
+	echo D
+elif((70<=x && x<=79))
+then
+	echo C
+elif((80 <= x && x<= 89))
+then
+	echo B
+elif((90 <= x && x<= 100))
+then
+	echo A
+else
+	echo "out of bounds, please enter a number between 0 and 100"
+fi

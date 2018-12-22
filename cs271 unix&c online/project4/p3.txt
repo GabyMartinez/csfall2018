@@ -1,0 +1,31 @@
+echo Enter a word
+read a
+echo Enter another word
+read b
+echo Enter one more word
+read c
+
+if [[ "$a" < "$b" && "$a" < "$c" ]]
+then
+	if [[ "$b" < "$c" ]]
+	then 
+		echo "${a}, ${b}, ${c}"
+	else 
+		echo "${a}, ${c}, ${b}"
+	fi
+elif [[ "$b" < "$a" && "$b" < "$c" ]]
+then
+	if [[ "$a" < "$c" ]]
+	then
+		echo "${b}, ${a}, ${c}"
+	else
+		echo "${b}, ${c}, ${a}"
+	fi
+else
+	if [[ "$a" < "$b" ]]
+	then
+		echo "${c}, ${a}, ${b}"
+	else
+		echo "${c}, ${b}, ${a}" 
+	fi
+fi

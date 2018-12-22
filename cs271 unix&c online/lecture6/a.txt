@@ -1,0 +1,7 @@
+f()
+{
+	echo "hello world"
+}
+
+f #calls function
+f #calls function f again

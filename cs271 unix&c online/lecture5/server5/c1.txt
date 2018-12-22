@@ -1,0 +1,4 @@
+for i in "John Doe" "Jane Doe" "Steve" "Michael Douglas"
+do
+	echo $i
+done

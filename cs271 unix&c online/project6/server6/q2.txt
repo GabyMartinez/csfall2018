@@ -1,0 +1,9 @@
+Question2()
+{
+	local a=2
+	b=3
+	echo "2 + 3 = $((a+b))"
+}
+
+Question2
+echo "2 + 3 = $((a+b))"

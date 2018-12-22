@@ -1,0 +1,4 @@
+for i in -12 23 56 43 2 -34
+do
+	echo $i
+done

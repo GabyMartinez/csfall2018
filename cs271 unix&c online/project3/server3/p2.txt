@@ -1,0 +1,5 @@
+car="Toyota Camry"
+price="\$14,000"
+color="Blue"
+
+echo "The $color color $car cost $price."

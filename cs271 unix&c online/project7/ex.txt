@@ -1,0 +1,16 @@
+#print all lines w phone number
+#grep "[0-9]\{3,3\}-[0-9]\{3,3\}-[0-9]\{4,4\}" example.txt
+
+#print all numbers with extentions
+#grep "[0-9]\{3,3\}-[0-9]\{3,3\}-[0-9]\{4,4\} [xX][0-9]\{4,4\}" example.txt
+
+#print lines that begin w 3 digits followed by a blank
+#grep ^"[0-9]\{3,3\} " example.txt
+
+#print  all lines containing a vowel (a, e, i, o, or u) followed by a single character followed
+#by the same vowel again. Thus, it will find “eve” or “adam” but not “vera”.
+
+#grep "\(a\+\|e\+\|i\+\|o\+\|u\+\).[aeiou].." example.txt
+
+grep "\(a.a\|e.e\|i.i\|o.o\|u.u\)" example.txt
+

@@ -1,0 +1,13 @@
+echo "Enter 1 to make a directory named mydir, 2 to display the list of files and folders in the current directory, and any other number to display the home directory."
+read a
+
+if [[ $a -eq 1 ]]
+# -eq equals
+then
+	mkdir mydir
+elif [[ $a -eq 2 ]]
+then
+	ls
+else
+	pwd
+fi

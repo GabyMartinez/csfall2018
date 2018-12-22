@@ -1,0 +1,13 @@
+city="Paris"
+capital="France"
+
+echo  "capital of $capital is $city"
+echo "capital of capital is $city"
+echo $capital $city
+echo $city `pwd`
+echo $(who am i) $capital
+echo ${capital}is paris
+
+#me just messing around
+read name
+echo "hello ${name}, nice to meet u"
