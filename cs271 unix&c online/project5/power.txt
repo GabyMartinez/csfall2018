@@ -1,0 +1,20 @@
+echo enter an integer for the base
+read b
+echo enter a positive integer for the power
+read p
+x=0
+
+if(( p == 0 ))
+then
+	x=1
+elif(( p == 1 ))
+then
+	x=$b
+else
+	x=$b
+	for((i = 1; i < p; i++))
+	do
+		x=$((x * b))
+	done
+fi
+echo "the result of $b to $p is $x" 

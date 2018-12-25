@@ -1,0 +1,14 @@
+age()
+{
+	local x
+	echo "Enter your age"
+	read x
+	if((x < 0))
+	then	
+		echo "Please enter a right age."
+		return #exit 0	
+	fi
+	echo "Thank you your age of $x is correct."
+}
+age
+echo after function

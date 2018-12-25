@@ -1,0 +1,19 @@
+echo How many numbers
+read n
+
+count=0
+greatest=0
+
+while((count!=n))
+do
+	echo Enter an integer
+	read x
+	if((x>greatest))
+	then
+		greatest=$x
+	fi
+	count=$((count+1))
+done
+
+echo "The biggest number is:"
+echo $greatest

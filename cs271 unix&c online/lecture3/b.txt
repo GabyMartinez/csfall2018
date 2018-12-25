@@ -1,0 +1,3 @@
+echo "My current directory is: "
+pwd
+#prints user current directory

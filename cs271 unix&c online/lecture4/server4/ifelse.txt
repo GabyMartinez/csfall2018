@@ -1,0 +1,11 @@
+echo "enter a string"
+read a
+echo "enter another string"
+read b
+
+if [[ "$a" < "$b" ]]
+then
+echo "$a comes before $b"
+else
+echo "$a comes after $b"
+fi

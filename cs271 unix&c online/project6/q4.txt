@@ -1,0 +1,13 @@
+Question4()
+{
+	local p=1
+	for ((i=2; i <= 3; i++))
+	do
+		p=$((p * i))
+	done
+	echo "2 * 3 = $p"
+	return $p
+}
+
+Question4
+echo "p is $?"

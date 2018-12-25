@@ -1,0 +1,7 @@
+So far the variables we had in our programs 
+
+were simple variables. There are other kinds of 
+
+variables and are called structured variables. 
+
+Array variables are of this kind.

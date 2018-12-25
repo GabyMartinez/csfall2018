@@ -1,0 +1,10 @@
+echo enter a number
+read a
+echo enter another number
+read b
+
+if((a<b))
+then
+	echo $((a + b))
+fi
+echo "this is after the if statement"

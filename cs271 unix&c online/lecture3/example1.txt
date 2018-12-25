@@ -1,0 +1,5 @@
+# this is a comment. A comment starts with a pound sign and continues to the end of line.
+echo "The first program from lecture 3"
+date
+who
+pwd

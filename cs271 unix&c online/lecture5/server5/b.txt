@@ -1,0 +1,10 @@
+echo "enter a word or the word stop"
+read x
+while [ $x != "stop" ]
+do
+	echo $x >> "myfile"
+	echo "enter a word or the word stop"
+	read x
+done
+cat "myfile"
+rm "myfile"

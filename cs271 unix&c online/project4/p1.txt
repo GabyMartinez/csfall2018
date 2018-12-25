@@ -1,0 +1,4 @@
+echo enter a file name
+read line
+
+wc -w $line

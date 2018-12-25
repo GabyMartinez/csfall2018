@@ -1,0 +1,14 @@
+echo "enter a string"
+read a
+echo "enter another string"
+read b
+
+if [[ "$a" < "$b" ]]
+then
+	echo "$a comes before $b"
+elif [[ "$a" > "$b" ]]
+then
+	echo "$a comes after $b"
+else
+	echo "Both strings are the same"
+fi
